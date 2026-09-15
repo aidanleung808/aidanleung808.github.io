@@ -49,7 +49,7 @@ ol{
     list-style-type: decimal;
     font-family: poppins, sans-serif;
     font-size: 1.1em;
-    padding: 1em 1em 1em 1.5em;
+    padding: 1em 1.5em 1em 1.5em;
 }
 ol li {
     margin-bottom: 1em;
