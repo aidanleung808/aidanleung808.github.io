@@ -270,12 +270,29 @@ main.contact li {
 	padding-bottom: 0.5em;
 }
 
+
+
+body {
+	font-family: sans-serif;
+	background-color: rgb(250, 250, 250);
+	display: grid;
+	
+}
+
+article {
+	margin-bottom: 1em;
+}
+
 @media screen and (min-width:60em) {
 	main.menu ul {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		column-gap: 6em;
 
+	}
+	body {
+		max-width: 90%;
+		margin: auto; 
 	}
 
 	article {
@@ -288,21 +305,4 @@ main.contact li {
 		display: grid;
 		grid-template-columns: repeat(3, auto);
 	}
-}
-
-body {
-	font-family: sans-serif;
-	max-width: 92.5%;
-	margin: auto;
-	background-color: rgb(250, 250, 250);
-}
-
-article {
-	margin-bottom: 1em;
-}
-
-body {
-	display: grid;
-	max-width: 90%;
-
 }
