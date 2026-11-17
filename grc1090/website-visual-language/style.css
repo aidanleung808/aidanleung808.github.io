@@ -134,13 +134,14 @@ h1 {
 h2,
 h3,
 h4 {
-	font-weight: 700;
+	font-weight: 500;
 	font-family: "autarchist-vf", sans-serif;
 }
 
 h2 {
 	font-size: 2em;
 	margin: 1em 1em 1em 0em;
+	font-weight: 500;
 }
 
 h3 {
@@ -180,6 +181,7 @@ h4 {
 p {
 	margin: 2em 0em 0em 0em;
 	font-family: "autarchist-vf", sans-serif;
+	font-weight: 300;
 }
 
 p.description {
@@ -223,12 +225,14 @@ main.contact ul {
 }
 
 main.contact ul p {
-	line-height: 0;
+	margin: 0;
+	line-height: 1em;
+	
 }
 
 
 p.slogan {
-	font-size: 4.25em;
+	font-size: 2.25em;
 	font-family: serif;
 	font-style: italic;
 	margin: 1em 0.1em 1.5em 0.1em;
@@ -248,6 +252,7 @@ footer {
 address {
 	color: rgb(250, 250, 250);
 	font-family: sans-serif;
+	line-height: 2em;
 }
 
 address p {
@@ -257,26 +262,35 @@ address p {
 footer p {
 	margin: 0em;
 }
-
+main.contact p {
+	margin: 0;
+	line-height: 1.5;
+}
 main.contact h2 {
 	margin-bottom: 0.2em;
 }
 
 main.contact h3 {
-	margin-top: 1em;
+	margin-bottom: 0.5rem;
 }
 
 main.contact li {
-	padding-bottom: 0.5em;
+	padding-bottom: 0;
 }
 
+main.contact address p + p {
+	margin-top: 0.5em;
+}
 
+main.contact li + li {
+	margin-top: 0.5em;
+}
 
 body {
 	font-family: sans-serif;
 	background-color: rgb(250, 250, 250);
 	display: grid;
-	
+
 }
 
 article {
@@ -290,9 +304,17 @@ article {
 		column-gap: 6em;
 
 	}
+	header { 
+		padding-bottom: 1em;
+	}
+
+	p.slogan {
+		font-size: 4.25em;
+	}
+
 	body {
 		max-width: 90%;
-		margin: auto; 
+		margin: auto;
 	}
 
 	article {
